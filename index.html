@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatable"
+        content="IE edge">
+        <meta name="viewport" content="width-device-width,initial-scale-1">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="Calculator">
+                <input type="text" placeholder="0" id="out">
+                <button onclick="Clear()" style="color: indianred;">CLR</button>
+                <button onclick="Delete()"style="color: indianred;">DEL</button>
+                <button onclick="appendOperator('%')" style="color: rgb(236, 240, 21);">%</button>
+                <button onclick="appendOperator('/')" style="color: rgb(236, 240, 21);">/</button>
+                <button class="btn" onclick="appendDigit('7')">7</button>
+                <button class="btn" onclick="appendDigit('8')">8</button>
+                <button class="btn" onclick="appendDigit('9')">9</button>
+                <button onclick="appendOperator('*')" style="color: rgb(236, 240, 21);">*</button>
+                <button class="btn" onclick="appendDigit('4')">4</button>
+                <button class="btn" onclick="appendDigit('5')">5</button>
+                <button class="btn" onclick="appendDigit('6')">6</button>
+                <button onclick="appendOperator('-')" style="color: rgb(236, 240, 21);">-</button>
+                <button class="btn"onclick="appendDigit('1')">1</button>
+                <button class="btn" onclick="appendDigit('2')">2</button>
+                <button class="btn" onclick="appendDigit('3')">3</button>
+                <button onclick="appendOperator('+')" style="color: rgb(236, 240, 21);">+</button>
+                <button class="btn" onclick="appendOperator('.')">.</button>
+                <button class="btn" onclick="appendDigit('0')">0</button>
+                <button onclick="calculate()" class="equal" style="color: rgb(236, 240, 21);">=</button>
+            </div>
+        </div> 
+        <script src="script.js"></script>   
+    </body>
+
+</html>
